@@ -1,0 +1,31 @@
+// Breakpoints
+$width-lg: 1200px;
+$width-md: 768px;
+$width-sm: 500px;
+
+@mixin breakpoint($class) {
+  @if $class == sm {
+      @media (min-width: $width-sm) {
+          @content;
+      }
+  } @else if $class == md {
+      @media (min-width: $width-md) {
+          @content;
+      }
+  } @else if $class == lg {
+      @media (min-width: $width-lg) {
+          @content;
+      }
+  } @else {
+      @warn 'Breakpoint mixin supports: sm, md, lg';
+  }
+}
+
+// Global colours
+$black-coal: #36353c;
+$green-jungle-start: #36c386;
+$green-jungle-end: #2fb275;
+$white-transparent: rgba(255, 255, 255, .3);
+
+// Distances
+$standard-space: 1.5rem;

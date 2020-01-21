@@ -1,0 +1,19 @@
+@import '../abstract.scss';
+
+.app-container {
+  $border: .1rem darken($green-jungle-end, .9) solid;
+  max-width: 30rem;
+  margin: 0 auto;
+  background: $white-transparent;
+  height: 100vh;
+  border-left: $border;
+  border-right: $border;
+  @include breakpoint(md) {
+    max-width: 50rem;
+  }
+}
+
+.app-title {
+  text-align: center;
+  padding: $standard-space;
+}

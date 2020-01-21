@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'abstract.scss';
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: Roboto, Arial, sans-serif;
+  color: $black-coal;
+  background: linear-gradient(145deg, $green-jungle-start, $green-jungle-end);
+}
+

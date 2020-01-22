@@ -1,5 +1,6 @@
 @import '../../../abstract.scss';
 .card {
+  $root: &;
   background: $white;
   margin: $standard-space;
   padding: $standard-space;
@@ -7,8 +8,21 @@
   text-align: center;
   &__text {
     font-size: 1.5rem;
-    &--hidden {
+    &--question {
+      display: inline;
+    }
+    &--answer {
       display: none;
+    }
+  }
+  &--flipped {
+    #{$root}__text {
+      &--question {
+        display: none;
+      }
+      &--answer {
+        display: inline;
+      }
     }
   }
 }

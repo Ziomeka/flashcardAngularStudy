@@ -1,4 +1,4 @@
-<div class='card'>
-  <span class='card__text'>{{ card.question }}</span>
-  <span class='card__text'>{{ card.answer }}</span>
+<div class='card' [ngClass]="setFlippedClass()">
+  <span class='card__text card__text--question'>{{ card.question }}</span>
+  <span class='card__text card__text--answer'>{{ card.answer }}</span>
 </div>

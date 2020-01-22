@@ -1,3 +1,4 @@
 <div>
-  <app-flashcard [card]="flashcards[index]"></app-flashcard>
+  <app-flashcard [card]="flashcards[deck.currentIndex]"></app-flashcard>
+  <app-flashcards-controls [deck]="deck" (index)="setCurrentIndex($event)"></app-flashcards-controls>
 </div>

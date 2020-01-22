@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FlashcardsComponent } from './components/flashcards/flashcards.component';
 import { FlashcardComponent } from './components/flashcard/flashcard.component';
+import { FlashcardsControlsComponent } from './components/flashcards-controls/flashcards-controls.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FlashcardsComponent,
-    FlashcardComponent
+    FlashcardComponent,
+    FlashcardsControlsComponent
   ],
   imports: [
     BrowserModule,

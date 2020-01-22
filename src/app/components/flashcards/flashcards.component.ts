@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Flashcard } from '../../models/Flashcard';
+import { Deck } from '../../models/Deck';
 
 @Component({
   selector: 'app-flashcards',
@@ -8,7 +9,7 @@ import { Flashcard } from '../../models/Flashcard';
 })
 export class FlashcardsComponent implements OnInit {
   flashcards:Flashcard[];
-  index:Number = 0;
+  deck:Deck;
   constructor() { }
 
   ngOnInit() {
@@ -24,6 +25,14 @@ export class FlashcardsComponent implements OnInit {
         answer: 'How do you do?'
       },
     ];
+    this.deck = {
+      currentIndex: 0,
+      deckLength: this.flashcards.length,
+    }
+  }
+
+  setCurrentIndex(index) {
+    this.deck.currentIndex = index;
   }
 
 }

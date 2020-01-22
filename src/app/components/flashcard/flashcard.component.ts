@@ -18,4 +18,7 @@ export class FlashcardComponent implements OnInit {
     return { 'card--flipped': this.isFlipped };
   }
 
+  flipCard() {
+    this.isFlipped = !this.isFlipped;
+  }
 }

@@ -2,6 +2,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { FlashcardsComponent } from './components/flashcards/flashcards.component';
+import { FlashcardComponent } from './components/flashcard/flashcard.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -11,7 +12,8 @@ describe('AppComponent', () => {
       ],
       declarations: [
         AppComponent,
-        FlashcardsComponent
+        FlashcardsComponent,
+        FlashcardComponent
       ],
     }).compileComponents();
   }));

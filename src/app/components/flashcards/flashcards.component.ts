@@ -8,6 +8,7 @@ import { Flashcard } from '../../models/Flashcard';
 })
 export class FlashcardsComponent implements OnInit {
   flashcards:Flashcard[];
+  index:Number = 0;
   constructor() { }
 
   ngOnInit() {

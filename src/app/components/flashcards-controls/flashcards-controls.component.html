@@ -1,3 +1,5 @@
-<p>
-  <button (click)="sendIndex()">Click me</button>
-</p>
+<div>
+  <button (click)="prev()" *ngIf="showPrev">Prev</button>
+  <button (click)="next()" *ngIf="showNext">Next</button>
+  <button (click)="reset()" *ngIf="showReset">Restart</button>
+</div>

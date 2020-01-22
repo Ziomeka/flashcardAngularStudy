@@ -1,5 +1,5 @@
 export class Flashcard {
-  id:Number;
-  question:String;
-  answer:String;
+  id:number;
+  question:string;
+  answer:string;
 }

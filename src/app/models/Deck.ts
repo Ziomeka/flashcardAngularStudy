@@ -1,4 +1,4 @@
 export class Deck {
-  currentIndex:Number;
-  deckLength:Number;
+  currentIndex:number;
+  deckLength:number;
 }

@@ -8,7 +8,7 @@ import { Flashcard } from '../../models/Flashcard';
 })
 export class FlashcardComponent implements OnInit {
   @Input() card:Flashcard;
-  isFlipped:Boolean = false;
+  isFlipped:boolean = false;
   constructor() { }
 
   ngOnInit() {

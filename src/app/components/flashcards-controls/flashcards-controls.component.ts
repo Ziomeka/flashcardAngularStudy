@@ -8,14 +8,40 @@ import { Deck } from '../../models/Deck';
 })
 export class FlashcardsControlsComponent implements OnInit {
   @Input() deck:Deck;
-  @Output() index = new EventEmitter<Number>();
+  @Output() currentIndex = new EventEmitter<Number>();
+  index:number;
+  showPrev:boolean;
+  showNext:boolean;
+  showReset:boolean;
   constructor() { }
 
   ngOnInit() {
+    this.index = this.deck.currentIndex;
+    this.setButtons();
   }
 
-  sendIndex() {
-    this.index.emit(1);
+  prev() {
+    this.index --;
+    this.update();
+  }
+  next() {
+    this.index ++;
+    this.update();
+  }
+  reset() {
+    this.index = 0;
+    this.update();
+  }
+
+  setButtons() {
+    this.showPrev = (this.index > 0);
+    this.showNext = (this.index < this.deck.deckLength - 1);
+    this.showReset = (this.index === this.deck.deckLength - 1);
+  }
+
+  update() {
+    this.setButtons();
+    this.currentIndex.emit(this.index);
   }
 
 }

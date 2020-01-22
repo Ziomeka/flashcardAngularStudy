@@ -5,7 +5,11 @@
   margin: $standard-space;
   padding: $standard-space;
   border-radius: $standard-space;
-  text-align: center;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: .1rem .1rem .5rem 0 rgba(0,0,0,0.75);
   cursor: pointer;
   &__text {
     font-size: 1.5rem;

@@ -1,5 +1,5 @@
-<div>
-  <button (click)="prev()" *ngIf="showPrev">Prev</button>
-  <button (click)="next()" *ngIf="showNext">Next</button>
-  <button (click)="reset()" *ngIf="showReset">Restart</button>
+<div class="controls">
+  <button (click)="prev()" *ngIf="showPrev" class="btn"><< Prev</button>
+  <button (click)="next()" *ngIf="showNext" class="btn">Next >></button>
+  <button (click)="reset()" *ngIf="showReset" class="btn">Restart</button>
 </div>

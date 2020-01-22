@@ -15,3 +15,13 @@ html {
   background: linear-gradient(145deg, $green-jungle-start, $green-jungle-end);
 }
 
+.btn {
+  margin: 0 $standard-space;
+  padding: $standard-space;
+  border-radius: $standard-space;
+  border: 0;
+  color: $black-coal;
+  font-weight: bold;
+  background-color: $green-jungle-start;
+}
+

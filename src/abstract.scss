@@ -25,7 +25,10 @@ $width-sm: 500px;
 $white: #fff;
 $black-coal: #36353c;
 $green-jungle-start: #36c386;
-$green-jungle-end: #2fb275;
+$green-jungle-end: darken($green-jungle-start, .5);
+$yellow: #ffdf88;
+$yellow-sun: #fdb633;
+$yellow-carrot: #fc802a;
 $white-transparent: rgba(255, 255, 255, .3);
 
 // Distances

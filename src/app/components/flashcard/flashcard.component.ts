@@ -14,6 +14,10 @@ export class FlashcardComponent implements OnInit {
   ngOnInit() {
   }
 
+  ngOnChanges() {
+    this.isFlipped = false;
+  }
+
   setFlippedClass() {
     return { 'card--flipped': this.isFlipped };
   }

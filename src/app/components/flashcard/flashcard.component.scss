@@ -1,0 +1,14 @@
+@import '../../../abstract.scss';
+.card {
+  background: $white;
+  margin: $standard-space;
+  padding: $standard-space;
+  border-radius: $standard-space;
+  text-align: center;
+  &__text {
+    font-size: 1.5rem;
+    &--hidden {
+      display: none;
+    }
+  }
+}
